@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" MinWidth="550" WindowStartupLocation="CenterScreen">
+    <Grid Background="red">
+        <StackPanel Margin="30">
+            <Border Background="#fdfdfd" CornerRadius="10" Padding="10">
+                <Grid>
+                    <!--Sol Teref-->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                        <Border Width="60" Height="60" CornerRadius="30" Margin="15,0,15,0">
+                            <Border.Background>
+                                <ImageBrush ImageSource="Images/user.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                        <StackPanel VerticalAlignment="Center">
+                            <TextBlock Text="Ibrahim Asadov" FontSize="16" Foreground="#8f8f8f" FontWeight="Bold"/>
+                            <TextBlock Text="Baku,Azerbaijan"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel  HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <Button Style="{StaticResource SaveButton}">
+                            <StackPanel Orientation="Horizontal">
+
+                                <fa:ImageAwesome Icon="BookmarkOutline" Style="{DynamicResource icon}"/>
+                                <TextBlock Text="Save Profile" Margin="10"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>
+
+    
